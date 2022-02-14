@@ -1,5 +1,6 @@
 setup:
-	python3 -m venv ~/.venv
+	#virtualenv --python $(which python3) ~/.venv_gcp
+	python3 -m venv ~/.venv_gcp
 
 install:
 	pip install -r requirements.txt
