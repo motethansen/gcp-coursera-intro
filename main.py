@@ -9,7 +9,7 @@ def hello():
     return 'Hello World! CD'
 
 @app.route('/name/<name>')
-def echo(name):
+def name(name):
     print(f"This was placed in the url: new-{name}")
     lenName = len(name)
     val = {"new-name": name, "len": lenName}
