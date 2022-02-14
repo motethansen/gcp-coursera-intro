@@ -8,10 +8,11 @@ def hello():
     print("I am inside hello world")
     return 'Hello World! CD'
 
-@app.route('/echo/<name>')
+@app.route('/name/<name>')
 def echo(name):
     print(f"This was placed in the url: new-{name}")
-    val = {"new-name": name}
+    lenName = len(name)
+    val = {"new-name": name, "len": lenName}
     return jsonify(val)
 
 
